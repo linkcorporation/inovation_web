@@ -32,7 +32,7 @@ hr {
 	overflow: visible;
 }
 pre {
-	font-family: monospace, monospace;
+	font-family: "Noto Sans JP";
 	font-size: 1em;
 }
 a {
@@ -101,7 +101,7 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: sans-serif;
+	font-family: "Noto Sans JP";
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -296,7 +296,7 @@ button,
 input,
 select,
 textarea {
-	font-family: "Hind Vadodara", sans-serif;
+	font-family: "Noto Sans JP";
 }
 a {
 	color: inherit;
@@ -321,7 +321,7 @@ h6,
 .h6 {
 	clear: both;
 	color: #1f2b35;
-	font-family: "Mukta", sans-serif;
+	font-family: "Noto Sans JP";
 	font-weight: 500;
 }
 h1,
@@ -515,7 +515,7 @@ pre .h3,
 pre .h4,
 pre .h5,
 pre .h6 {
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: "Noto Sans JP";
 }
 pre,
 code,
@@ -941,7 +941,7 @@ label {
 }
 .button {
 	display: inline-flex;
-	font-family: "Mukta", sans-serif;
+	font-family: "Noto Sans JP";
 	font-size: 16px;
 	letter-spacing: -0.1px;
 	font-weight: 700;
@@ -1077,7 +1077,7 @@ label {
 	/* margin-bottom: 32px; */
     font-size: .85rem!important;
     letter-spacing: .3px;
-	line-height: 1.3rem;
+	line-height: 1.4rem;
 }
 .hero-illustration {
 	margin-top: 40px;
@@ -1162,8 +1162,8 @@ label {
 }
 .feature {
 	padding: 12px;
-	width: 276px;
-	max-width: 276px;
+	width: 365px;
+	max-width: 365px;
 	flex-grow: 1;
 }
 .feature-inner {
@@ -1171,6 +1171,49 @@ label {
 	background: #fff;
 	padding: 40px 24px;
 	box-shadow: 0 16px 48px #e2e8ed;
+}
+.feature-inner h4{
+	color: #ff891c;
+	font-weight: 600;
+}
+.feature-info{
+	margin-top: 16px;
+	font-size: .65rem;
+	line-height: 1.2rem;
+	color: #777777;
+	
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @supports (-ms-ime-align: auto) {
 	.feature-inner {
@@ -1278,7 +1321,7 @@ label {
 	background: #e2e8ed;
 }
 .pricing-table-title {
-	font-family: "Mukta", sans-serif;
+	font-family: "Noto Sans JP";
 	color: #1f2b35;
 }
 .pricing-table-price-currency {
