@@ -1165,56 +1165,55 @@ label {
 	width: 365px;
 	max-width: 365px;
 	flex-grow: 1;
+	position: relative;
 }
 .feature-inner {
-	height: 100%;
+	height: 75%;
 	background: #fff;
 	padding: 40px 24px;
 	box-shadow: 0 16px 48px #e2e8ed;
+	border-radius: 8px;
 }
-.feature-inner h4{
+.feature-inner h1,h3{
 	color: #ff891c;
 	font-weight: 600;
+	letter-spacing: .1px;
+	transition: .3s;
 }
 .feature-info{
 	margin-top: 16px;
 	font-size: .65rem;
 	line-height: 1.2rem;
-	color: #777777;
-	
+	color: #444;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+	transition-timing-function: ease-in;
 }
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+
+.feature-inner:hover{
+	transition: .3s;
+	background: #eee;
+	border: .5px solid #999;
 }
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+
+.feature-inner:hover .feature-icon{
+	opacity: .8;
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+
+.feature-inner:hover h1,.feature-inner:hover h3{
+	transition: .3s;
+	transform: translateY(-100%);
 }
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
+
+.feature-inner:hover .feature-info{
+	opacity: 1;
+	visibility: visible;
+	transition-timing-function: ease-in;
+	transition: .3s;
+	transform: translateY(-40%);
 }
+
 @supports (-ms-ime-align: auto) {
 	.feature-inner {
 		box-shadow: 0 16px 48px rgba(31, 43, 53, 0.12);
